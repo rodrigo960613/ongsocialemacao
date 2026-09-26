@@ -1,0 +1,192 @@
+.hero {
+  position: relative;
+
+  height: 310px;
+
+  overflow: hidden;
+
+  background: #edf5fc;
+}
+
+.hero-background {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 67%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #eef6fd 0%,
+      #eef6fd 26%,
+      rgba(238, 246, 253, 0.97) 38%,
+      rgba(238, 246, 253, 0.55) 52%,
+      rgba(238, 246, 253, 0) 70%
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+
+  width: min(920px, 92%);
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding-top: 34px;
+}
+
+.hero-label {
+  display: block;
+
+  color: #075dac;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.hero h1 {
+  margin-top: 9px;
+
+  color: #123b6a;
+
+  font-size: 35px;
+  line-height: 1.04;
+
+  letter-spacing: -1.1px;
+}
+
+.hero h1 span {
+  color: #065bb1;
+}
+
+.hero p {
+  width: 395px;
+
+  margin-top: 11px;
+
+  color: #254b70;
+
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.hero-button {
+  width: 252px;
+  height: 40px;
+
+  margin-top: 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #0867c6,
+    #0752a4
+  );
+
+  border-radius: 20px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  box-shadow: 0 7px 17px rgba(0, 82, 165, 0.2);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 22px rgba(0, 82, 165, 0.27);
+}
+
+.hero-button span {
+  font-size: 17px;
+}
+
+.hero-curve {
+  position: absolute;
+
+  z-index: 4;
+
+  left: -4%;
+  bottom: -31px;
+
+  width: 108%;
+  height: 65px;
+
+  background: #ffffff;
+
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+  transform: rotate(-1deg);
+}
+
+@media (max-width: 700px) {
+  .hero {
+    height: 420px;
+  }
+
+  .hero-background {
+    width: 100%;
+    opacity: 0.6;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        #eef6fd 0%,
+        rgba(238, 246, 253, 0.92) 60%,
+        rgba(238, 246, 253, 0.65) 100%
+      );
+  }
+
+  .hero-content {
+    padding-top: 55px;
+    text-align: center;
+  }
+
+  .hero p {
+    width: auto;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

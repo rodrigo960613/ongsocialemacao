@@ -1,0 +1,194 @@
+.servicos {
+  padding: 18px 0 19px;
+
+  background: #ffffff;
+  cursor: default;
+}
+
+.servicos-container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+}
+
+.servicos-heading {
+  text-align: center;
+}
+
+.section-title-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #095dad;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.section-title-small i {
+  display: block;
+
+  width: 20px;
+  height: 2px;
+
+  background: #1266bb;
+}
+
+.servicos-heading h2 {
+  margin-top: 7px;
+
+  color: #123e72;
+
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.servicos-heading p {
+  margin-top: 5px;
+
+  color: #5d7492;
+
+  font-size: 18px;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+.service-card {
+  min-height: 250px;
+
+  padding: 28px 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #dce6ef;
+
+  border-radius: 7px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c6d9eb;
+
+  box-shadow:
+    0 8px 17px rgba(20, 70, 120, 0.09);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #0864bd,
+    #0750a2
+  );
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 5px 13px rgba(5, 74, 151, 0.18);
+}
+
+.service-icon svg {
+  width: 27px;
+  height: 27px;
+
+  fill: none;
+
+  stroke: currentColor;
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-card h3 {
+  min-height: 26px;
+
+  margin-top: 8px;
+
+  color: #074f9f;
+
+  font-size: 18px;
+  line-height: 1.2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card p {
+  margin-top: 6px;
+
+  color: #536c89;
+
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.service-card a {
+  margin-top: auto;
+  padding-top: 8px;
+
+  color: #0754a7;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.service-card a span {
+  margin-left: 5px;
+
+  font-size: 11px;
+
+  transition: transform 0.25s ease;
+}
+
+.service-card a:hover span {
+  display: inline-block;
+
+  transform: translateX(3px);
+}
+
+@media (max-width: 850px) {
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 200px;
+  }
+}
