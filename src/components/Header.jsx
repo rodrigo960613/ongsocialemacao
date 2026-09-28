@@ -35,7 +35,7 @@ function Header() {
           </a>
 
           <a href="#footer">
-            Onde Estamos & Contato
+            Onde Estamos e Contato
           </a>
 
         </nav>
