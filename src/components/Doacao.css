@@ -1,26 +1,22 @@
 .doacao {
-  padding: 10px 0;
-
+  padding: 18px 0 28px;
   background: #ffffff;
 }
 
 .doacao-container {
   position: relative;
 
-  width: min(920px, 92%);
-  min-height: 91px;
+  width: min(1120px, 92%);
+  min-height: 118px;
 
   margin: 0 auto;
-
-  padding: 10px 28px;
+  padding: 18px 32px;
 
   display: grid;
-
-  grid-template-columns: 74px 1fr auto 125px;
-
+  grid-template-columns: 82px 1fr auto 120px;
   align-items: center;
 
-  gap: 18px;
+  gap: 24px;
 
   overflow: hidden;
 
@@ -29,105 +25,189 @@
   background:
     linear-gradient(
       110deg,
-      #075eb9,
-      #0964c4 58%,
-      #0751a3
+      #075eb9 0%,
+      #0867c6 55%,
+      #0752a4 100%
     );
 
-  border-radius: 12px;
+  border-radius: 14px;
 
   box-shadow:
-    0 6px 17px rgba(4, 76, 151, 0.13);
+    0 10px 28px rgba(4, 76, 151, 0.16);
 }
 
-.doacao-container::after {
-  content: '';
+/* Detalhes decorativos */
+
+.doacao-container::before {
+  content: "";
 
   position: absolute;
 
-  right: 160px;
-  top: 17px;
+  width: 180px;
+  height: 180px;
 
-  width: 1px;
-  height: 56px;
+  left: -75px;
+  bottom: -100px;
 
-  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
 }
 
+.doacao-container::after {
+  content: "";
+
+  position: absolute;
+
+  right: 145px;
+  top: 20px;
+
+  width: 1px;
+  height: 78px;
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Coração */
+
 .doacao-heart {
-  width: 62px;
-  height: 62px;
+  width: 68px;
+  height: 68px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
 }
 
 .doacao-heart svg {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
 
   fill: none;
 
   stroke: #ffffff;
   stroke-width: 1.5;
-
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+.doacao-container:hover .doacao-heart {
+  transform: scale(1.05);
+
+  background: rgba(255, 255, 255, 0.13);
+}
+
+/* Texto */
+
+.doacao-text {
+  min-width: 0;
+}
+
+.doacao-text > span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
 .doacao-text h2 {
+  margin-top: 5px;
+
+  color: #ffffff;
+
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .doacao-text p {
-  max-width: 445px;
+  max-width: 570px;
 
-  margin-top: 5px;
+  margin-top: 6px;
 
-  color: rgba(255, 255, 255, 0.91);
+  color: rgba(255, 255, 255, 0.9);
 
   font-size: 16px;
   line-height: 1.4;
 }
 
-.doacao-button {
-  min-width: 200px;
-  height: 40px;
+/* Botão */
 
-  display: flex;
+.doacao-button {
+  position: relative;
+  z-index: 2;
+
+  min-width: 175px;
+  height: 44px;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+
+  gap: 8px;
 
   color: #0757ac;
 
   background: #ffffff;
 
-  border-radius: 18px;
+  border-radius: 22px;
 
   font-size: 16px;
   font-weight: 800;
 
+  box-shadow:
+    0 6px 16px rgba(0, 32, 74, 0.14);
+
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.doacao-button:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 6px 15px rgba(0, 32, 74, 0.17);
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .doacao-button span {
   color: #0757ac;
+
   font-size: 16px;
+
+  transition:
+    transform 0.25s ease;
 }
 
+.doacao-button:hover {
+  color: #0757ac;
+
+  background: #f4f8fc;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 20px rgba(0, 32, 74, 0.2);
+}
+
+.doacao-button:hover span {
+  transform: scale(1.1);
+}
+
+/* Slogan */
+
 .doacao-slogan {
+  position: relative;
+  z-index: 2;
+
   color: #ffffff;
 
   font-family: cursive;
@@ -136,15 +216,22 @@
   line-height: 0.95;
 
   font-style: italic;
+  font-weight: 600;
 
   text-align: center;
 
   transform: rotate(-4deg);
 }
 
-@media (max-width: 750px) {
+/* Tablet */
+
+@media (max-width: 900px) {
   .doacao-container {
-    grid-template-columns: 55px 1fr auto;
+    grid-template-columns: 70px 1fr auto;
+
+    gap: 18px;
+
+    padding: 18px 24px;
   }
 
   .doacao-slogan {
@@ -154,19 +241,68 @@
   .doacao-container::after {
     display: none;
   }
+
+  .doacao-text p {
+    max-width: 520px;
+  }
 }
 
-@media (max-width: 520px) {
-  .doacao-container {
-    grid-template-columns: 1fr;
+/* Celular */
 
-    text-align: center;
-
-    padding: 25px;
+@media (max-width: 650px) {
+  .doacao {
+    padding: 12px 0 25px;
   }
 
-  .doacao-heart,
+  .doacao-container {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 28px 22px;
+
+    text-align: center;
+  }
+
+  .doacao-heart {
+    margin: 0 auto;
+  }
+
+  .doacao-text > span {
+    font-size: 12px;
+  }
+
+  .doacao-text h2 {
+    font-size: 20px;
+  }
+
+  .doacao-text p {
+    font-size: 16px;
+  }
+
   .doacao-button {
-    margin: auto;
+    min-width: 190px;
+
+    margin: 5px auto 0;
+  }
+}
+
+/* Celulares pequenos */
+
+@media (max-width: 400px) {
+  .doacao-container {
+    padding: 25px 18px;
+  }
+
+  .doacao-heart {
+    width: 62px;
+    height: 62px;
+  }
+
+  .doacao-heart svg {
+    width: 38px;
+    height: 38px;
   }
 }
