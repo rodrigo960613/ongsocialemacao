@@ -5,21 +5,13 @@ function Sobre() {
   return (
     <section className="sobre" id="sobre">
       <div className="sobre-container">
-
         <div className="sobre-image">
-          <img
-            src={fachada}
-            alt="Fachada da ONG Social em Ação"
-          />
+          <img src={fachada} alt="Fachada da ONG Social em Ação" />
 
-          <div className="sobre-image-badge">
-            <span>ONG</span>
-            <strong>Social em Ação</strong>
-          </div>
+          
         </div>
 
         <div className="sobre-content">
-
           <span className="sobre-label">
             <i></i>
             SOBRE A ONG
@@ -28,14 +20,17 @@ function Sobre() {
           <h2>Social em Ação</h2>
 
           <p>
-            Somos uma organização sem fins lucrativos que atua
-            com compromisso e responsabilidade social, levando
-            serviços e apoio às famílias e comunidades mais
-            necessitadas.
+            Somos uma organização sem fins lucrativos que atua com compromisso e
+            responsabilidade social, levando serviços, oportunidades e apoio às
+            famílias e comunidades que mais precisam. <br /> Nosso trabalho também
+            conta com o apoio do Professor Gerôncio Coelho, que tem uma
+            trajetória ligada à educação e à atuação comunitária em Fortaleza.
+            Esse apoio contribui para fortalecer iniciativas voltadas ao
+            desenvolvimento social e à melhoria da qualidade de vida da
+            comunidade.
           </p>
 
           <div className="sobre-destaques">
-
             <div className="sobre-item">
               <div className="sobre-icon">
                 <svg viewBox="0 0 24 24">
@@ -60,7 +55,8 @@ function Sobre() {
               </div>
 
               <span>
-                Trabalho<br />
+                Trabalho
+                <br />
                 social
               </span>
             </div>
@@ -75,14 +71,13 @@ function Sobre() {
               </div>
 
               <span>
-                Um futuro<br />
+                Um futuro
+                <br />
                 melhor
               </span>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
