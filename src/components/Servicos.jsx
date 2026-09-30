@@ -83,43 +83,191 @@ function Icon({ type }) {
 const services = [
   {
     type: "saude",
-    title: "SAÚDE",
-    text: "Consultas, exames, cirurgias, prevenção, oftalmologia, odontologia e muito mais.",
+    title: "ÁREA DE SAÚDE",
+    items: [
+      {
+        title: "Marcação de consultas:",
+        text: "Cirurgias, parto, ligação, prevenção ginecológica, eletrocardiograma (ECG), endoscopia, ultrassonografia e raios-X.",
+      },
+      {
+        title: "Exames:",
+        text: "Hemograma completo, entre outros.",
+      },
+      {
+        title: "Oftalmologista:",
+        text: "Avaliação e cirurgias de catarata.",
+      },
+      {
+        title: "Odontologia:",
+        text: "Clínica geral.",
+      },
+    ],
   },
+
   {
     type: "documentos",
     title: "AQUISIÇÃO DE DOCUMENTOS NA ONG",
-    text: "RG, certidões, CPF, carteira de trabalho digital e muito mais.",
+    items: [
+      {
+        text: "Agendamentos da 1ª e 2ª vias da carteira de identidade.",
+      },
+      {
+        text: "1ª e 2ª vias da certidão de nascimento.",
+      },
+      {
+        text: "1ª e 2ª vias da certidão de casamento.",
+      },
+      {
+        text: "Aquisição do papel para obter o casamento gratuito.",
+      },
+      {
+        text: "1ª e 2ª vias do CPF.",
+      },
+      {
+        text: "Carteira de trabalho digital.",
+      },
+    ],
   },
+
   {
     type: "atendimento",
     title: "ATENDIMENTO NA ONG",
-    text: "Psicólogos, assistentes sociais, fisioterapia, assessoria jurídica, castração de pets e Bolsa Família.",
+    items: [
+      {
+        text: "Psicólogos e psicanalistas.",
+      },
+      {
+        text: "Atendimento psicológico para crianças e adolescentes autistas.",
+      },
+      {
+        text: "Assistentes sociais.",
+      },
+      {
+        text: "Fisioterapeuta.",
+      },
+      {
+        text: "Assessoria jurídica.",
+      },
+      {
+        text: "Castração, consultas, exames e cirurgias para pets (cães e gatos).",
+      },
+      {
+        title: "Bolsa Família:",
+        text: "Desbloqueio, cadastramento e recadastramento.",
+      },
+    ],
   },
+
   {
     type: "infraestrutura",
     title: "INFRAESTRUTURA NOS BAIRROS",
-    text: "Retirada de entulhos, recapeamento, sinalização, transporte, saneamento e iluminação pública.",
+    items: [
+      {
+        text: "Retirada de entulhos das ruas e recapeamento asfáltico.",
+      },
+      {
+        text: "Sinalização de ruas e redutores de velocidade.",
+      },
+      {
+        text: "Pedidos de remoção de paradas de ônibus e solicitação de abrigos para as paradas de ônibus.",
+      },
+      {
+        text: "Ligação da rede SANEAR (Cagece).",
+      },
+      {
+        text: "Remoção de postes de iluminação pública e substituição de lâmpadas queimadas (Enel).",
+      },
+    ],
   },
+
   {
     type: "familia",
     title: "ASSISTÊNCIA E ORIENTAÇÃO À FAMÍLIA",
-    text: "Auxílio funeral, vagas em escolas, tarifa social, sopão, Minha Casa Minha Vida e muito mais.",
+    items: [
+      {
+        title: "Projeto Mesa Farta:",
+        text: "Doação de frutas, legumes e verduras.",
+      },
+      {
+        title: "Auxílio Funeral:",
+        text: "Urna e enterro para pessoa carente.",
+      },
+      {
+        text: "Vagas em escolas.",
+      },
+      {
+        text: "Carteira de gratuidade para passe livre de idosos (Sindiônibus).",
+      },
+      {
+        text: "Tarifa Social de Energia Elétrica.",
+      },
+      {
+        title: "Projeto Sopão:",
+        text: "Para as comunidades carentes.",
+      },
+      {
+        text: "Encaminhamento para internação de dependentes químicos.",
+      },
+      {
+        text: "Encaminhamento para palestras de Alcoólicos Anônimos (A.A.).",
+      },
+      {
+        text: "Encaminhamento para o cadastro do Projeto Minha Casa Minha Vida (HABITAFOR).",
+      },
+      {
+        text: "Encaminhamento ao Conselho Tutelar.",
+      },
+      {
+        text: "Encaminhamento para teste de paternidade (DNA/LACEN).",
+      },
+      {
+        title: "Microempreendedor Individual:",
+        text: "Cadastro pelo SEBRAE.",
+      },
+    ],
   },
+
   {
     type: "esporte",
     title: "ESPORTE E LAZER",
-    text: "Escolinhas de futsal e futvôlei, torneios, skate, zumba e atividades para crianças e adolescentes.",
+    items: [
+      {
+        text: "Inscrição de crianças e adolescentes para escolinhas de FUTSAL e FUTVÔLEI, visando tirá-los da ociosidade e da violência, além da prevenção ao uso de drogas.",
+      },
+      {
+        text: "Inscrição para realização de Torneios, Copas e Campeonatos de FUTSAL, FUTVÔLEI, SKATE e ZUMBA, promovendo o esporte e o lazer em nossas comunidades.",
+      },
+    ],
   },
+
   {
     type: "emprego",
     title: "EMPREGOS / ESTÁGIOS",
-    text: "Encaminhamento de currículos para SINE, CDL, supermercados, empresas privadas e muito mais.",
+    items: [
+      {
+        title: "Encaminhamento de currículos para:",
+        text: "SINE IDT, CDL, supermercados e empresas privadas.",
+      },
+      {
+        text: "1º emprego.",
+      },
+      {
+        text: "Instituições conveniadas com a ONG Social em Ação.",
+      },
+    ],
   },
+
   {
     type: "educacao",
     title: "EDUCAÇÃO, ARTE E CULTURA",
-    text: "Música, dança, teatro, capoeira, karatê, jiu-jitsu, fanfarra e eventos culturais.",
+    items: [
+      {
+        text: "Reinserção na comunidade por meio de oficinas de arte e cursos profissionalizantes, incluindo: Música, Dança, Teatro, Folclore, Banda de Fanfarra, Capoeira, Karatê e Jiu-jitsu.",
+      },
+      {
+        text: "Promoção de eventos culturais: Festejos Juninos, Paixão de Cristo e 7 de Setembro (Desfile Cívico).",
+      },
+    ],
   },
 ];
 
@@ -127,7 +275,6 @@ function Servicos() {
   return (
     <section className="servicos" id="servicos">
       <div className="servicos-container">
-
         <div className="servicos-heading">
           <span className="section-title-small">
             <i></i>
@@ -137,19 +284,16 @@ function Servicos() {
           <h2>Conheça nossas áreas de atendimento</h2>
 
           <p>
-            Oferecemos diversos serviços gratuitos para atender
-            você, sua família e toda a comunidade.
+            Confira todos os serviços e ações oferecidos pela ONG Social em
+            Ação.
           </p>
         </div>
 
         <div className="servicos-grid">
-          {services.map((service) => (
-            <article
-              className="service-card"
-              key={service.title}
-            >
+          {services.map((service, index) => (
+            <article className="service-card" key={service.title}>
               <div className="service-number">
-                {String(services.indexOf(service) + 1).padStart(2, "0")}
+                {String(index + 1).padStart(2, "0")}
               </div>
 
               <div className="service-icon">
@@ -158,11 +302,21 @@ function Servicos() {
 
               <h3>{service.title}</h3>
 
-              <p>{service.text}</p>
+              <ul className="service-list">
+                {service.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>
+                    <span className="service-bullet">•</span>
+
+                    <p>
+                      {item.title && `${item.title} `}
+                      {item.text}
+                    </p>
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
-
       </div>
     </section>
   );
