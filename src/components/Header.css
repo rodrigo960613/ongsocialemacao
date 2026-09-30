@@ -11,7 +11,7 @@
 
 .header-container {
   width: min(1120px, 92%);
-  min-height: 88px;
+  min-height: 110px;
   margin: 0 auto;
 
   display: flex;
