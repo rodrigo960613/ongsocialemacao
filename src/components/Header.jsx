@@ -18,7 +18,7 @@ function Header() {
           <a href="#sobre">Sobre Nós</a>
           <a href="#servicos">Serviços</a>
           <a href="#doacao">Doação</a>
-          <a href="#footer">Onde Estamos e Contato</a>
+          <a href="#footer">Onde Estamos & Contato</a>
         </nav>
 
         <a
