@@ -23,7 +23,7 @@ function Sobre() {
             Somos uma organização sem fins lucrativos que atua com compromisso e
             responsabilidade social, levando serviços, oportunidades e apoio às
             famílias e comunidades que mais precisam. <br /> Nosso trabalho também
-            conta com o apoio do Professor Gerôncio Coelho, que tem uma
+            conta com o apoio do <strong>Professor Gerôncio Coelho</strong>, que tem uma
             trajetória ligada à educação e à atuação comunitária em Fortaleza.
             Esse apoio contribui para fortalecer iniciativas voltadas ao
             desenvolvimento social e à melhoria da qualidade de vida da
